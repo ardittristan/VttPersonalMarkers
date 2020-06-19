@@ -1,0 +1,10 @@
+{
+    "PersonalMarkers.useMiddleMouse.name": "Use middle mouse button?",
+    "PersonalMarkers.useMiddleMouse.hint": "Use the middle mouse button for adding personal markers to the map?",
+    "PersonalMarkers.keyBind.name": "Marker Hotkey",
+    "PersonalMarkers.keyBind.hint": "Hotkey for personal markers (Doesn't work when middle mouse button is on)",
+    "PersonalMarkers.deleteOffset.name": "Deletion radius",
+    "PersonalMarkers.deleteOffset.hint": "Radius in pixels around marker that deletes it when clicked",
+    "PersonalMarkers.markerIconColor.name": "Marker Color",
+    "PersonalMarkers.markerIconColor.label": "Choose Color"
+}
