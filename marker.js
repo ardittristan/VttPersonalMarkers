@@ -1,5 +1,8 @@
-import ColorSetting from "./lib/colorSetting.js";
-
+Hooks.once('ready', () => {
+    try{window.Ardittristan.ColorSetting.tester} catch {
+        ui.notifications.notify('Please make sure you have the "lib - ColorSettings" module installed', "error", {permanent: true});
+    }
+});
 
 Hooks.once('init', async function () {
     // Init settings
@@ -42,7 +45,7 @@ Hooks.once('init', async function () {
         config: true
     });
 
-    new ColorSetting("personalmarkers", "markerIconColor", {
+    new window.Ardittristan.ColorSetting("personalmarkers", "markerIconColor", {
         name: game.i18n.localize("PersonalMarkers.markerIconColor.name"),
         label: game.i18n.localize("PersonalMarkers.markerIconColor.label"),
         defaultColor: "#000000ff",
