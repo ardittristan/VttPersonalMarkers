@@ -136,6 +136,8 @@ class MarkersLayer extends CanvasLayer {
      */
     _onMidMouseDown(e) {
         if (!this._mouseOnCanvas || e.button != 1 || !game.settings.get("personalmarkers", "useMiddleMouse")) return;
+        e.preventDefault()
+        e.stopPropagation()
         const id = Math.random().toString(36).substring(7);
         this._triggerPing(id);
     }
