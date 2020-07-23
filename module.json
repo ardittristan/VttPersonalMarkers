@@ -15,7 +15,7 @@
 	],
     "url": "https://github.com/ardittristan/VttPersonalMarkers",
     "manifest": "https://raw.githubusercontent.com/ardittristan/VttPersonalMarkers/master/module.json",
-    "download": "https://github.com/ardittristan/VttPersonalMarkers/archive/master.zip",
+    "download": "https://github.com/ardittristan/VttPersonalMarkers/releases/download/latest/personal-markers.zip",
 	"minimumCoreVersion": "0.5.5",
 	"compatibleCoreVersion": "0.6.4"
 }
