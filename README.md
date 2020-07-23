@@ -1,4 +1,4 @@
-https://img.shields.io/github/downloads/ardittristan/VttPersonalMarkers/latest/total
+![GitHub Releases](https://img.shields.io/github/downloads/ardittristan/VttPersonalMarkers/latest/total)
 
 # Personal Markers
 
