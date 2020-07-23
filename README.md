@@ -1,3 +1,5 @@
+https://img.shields.io/github/downloads/ardittristan/VttPersonalMarkers/latest/total
+
 # Personal Markers
 
 This Module allows you to add markers to a scene only you can see.
