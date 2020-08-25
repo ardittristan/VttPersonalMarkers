@@ -1,9 +1,3 @@
-Hooks.once('ready', () => {
-    try{window.Ardittristan.ColorSetting.tester} catch {
-        ui.notifications.notify('Please make sure you have the "lib - ColorSettings" module installed', "error", {permanent: true});
-    }
-});
-
 Hooks.once('init', async function () {
     // Init settings
     game.settings.register("personalmarkers", "markerJSON", {
@@ -45,13 +39,24 @@ Hooks.once('init', async function () {
         config: true
     });
 
-    new window.Ardittristan.ColorSetting("personalmarkers", "markerIconColor", {
-        name: game.i18n.localize("PersonalMarkers.markerIconColor.name"),
-        label: game.i18n.localize("PersonalMarkers.markerIconColor.label"),
-        defaultColor: "#000000ff",
-        scope: "client",
-        onChange: () => window.location.reload()
-    });
+    if (typeof window?.Ardittristan?.ColorSetting === "function") {
+        new window.Ardittristan.ColorSetting("personalmarkers", "markerIconColor", {
+            name: game.i18n.localize("PersonalMarkers.markerIconColor.name"),
+            label: game.i18n.localize("PersonalMarkers.markerIconColor.label"),
+            defaultColor: "#000000ff",
+            scope: "client",
+            onChange: () => window.location.reload()
+        });
+    } else {
+        game.settings.register("personalmarkers", "markerIconColor", {
+            name: "PersonalMarkers.markerIconColor.name",
+            restricted: false,
+            default: "#000000ff",
+            type: String,
+            scope: "client",
+            config: true
+        });
+    }
 });
 
 /**
@@ -136,8 +141,8 @@ class MarkersLayer extends CanvasLayer {
      */
     _onMidMouseDown(e) {
         if (!this._mouseOnCanvas || e.button != 1 || !game.settings.get("personalmarkers", "useMiddleMouse")) return;
-        e.preventDefault()
-        e.stopPropagation()
+        e.preventDefault();
+        e.stopPropagation();
         const id = Math.random().toString(36).substring(7);
         this._triggerPing(id);
     }

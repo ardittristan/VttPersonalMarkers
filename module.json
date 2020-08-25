@@ -2,9 +2,10 @@
 	"name": "personalmarkers",
 	"title": "Personal Markers",
 	"description": "Add personal markers that only you can see.",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": "ardittristan#0001",
 	"esmodules": ["marker.js"],
+	"scripts": ["./lib/colorSettingStub.js"],
 	 "socket": true,
 	"languages": [
 		{

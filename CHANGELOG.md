@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version 1.0.3
+
+Make colorsettings lib optional.
+
 ## Version 1.0.2
 
 If middle mouse button is on it now eats the input so it doesn't trigger the fast scroll.
