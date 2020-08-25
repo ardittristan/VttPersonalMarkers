@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version 1.0.4
+
+Push manifest version.
+
 ## Version 1.0.3
 
 Make colorsettings lib optional.
