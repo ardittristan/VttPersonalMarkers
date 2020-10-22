@@ -2,7 +2,7 @@
 	"name": "personalmarkers",
 	"title": "Personal Markers",
 	"description": "Add personal markers that only you can see.",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"author": "ardittristan#0001",
 	"esmodules": ["marker.js"],
 	"scripts": ["./lib/colorSettingStub.js"],
@@ -18,5 +18,5 @@
     "manifest": "https://raw.githubusercontent.com/ardittristan/VttPersonalMarkers/master/module.json",
     "download": "https://github.com/ardittristan/VttPersonalMarkers/releases/latest/download/personal-markers.zip",
 	"minimumCoreVersion": "0.5.5",
-	"compatibleCoreVersion": "0.7.0"
+	"compatibleCoreVersion": "0.7.5"
 }
