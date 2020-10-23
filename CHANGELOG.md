@@ -1,5 +1,9 @@
 # Patch Notes
 
+## Version 1.0.6
+
+Make marker work on isotopic maps.
+
 ## Version 1.0.5
 
 Push compatible core version.

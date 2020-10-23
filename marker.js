@@ -190,17 +190,7 @@ class MarkersLayer extends CanvasLayer {
      * @private
      */
     _getMousePos() {
-        const mouse = canvas.app.renderer.plugins.interaction.mouse.global;
-        const t = this.worldTransform;
-
-        function calcCoord(axis) {
-            return (mouse[axis] - t['t' + axis]) / canvas.stage.scale[axis];
-        }
-
-        return {
-            x: calcCoord('x'),
-            y: calcCoord('y')
-        };
+        return canvas.app.renderer.plugins.interaction.mouse.getLocalPosition(canvas.stage);
     }
 
     displayPing(position, id, isNew = false) {
